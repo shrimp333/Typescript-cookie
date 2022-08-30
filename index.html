@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie</title>
+    <script defer type="module" src="./public/index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Cookies</h1>
+        <h2>Current Cookies</h2>
+        <div id="cookiesDiv">
+            <!-- TODO: Remove the below divs they are just an example of what the cookies look like -->
+            <!-- <div class="cookie" style="background-color: brown"> 1</div>
+                <div class="cookie" style="background-color: blue"> 30</div> -->
+        </div>
+        <h2>Edit Cookies</h2>
+        <div id='cookieInfo'>
+            <select id='cookieSelector'></select>
+            <input id="cookieColour-inp" type="text"/>
+        </div>
+
+        <div id="buttonDiv">
+            <button id="changeColour-btn">Change Colour</button>
+            <button id="changeSprinkleColour-btn">Change Sprinkle Colour</button>
+            <button id="addChocolateChip-btn">Increase Chocolate Chips</button>
+        </div>
+        <hr>
+        <h2>Create Cookie</h2>
+        <div id="cookieCreation">
+            <label style="display:inline;">Cookie Colour:</label>
+            <select id="creationColour">
+                <option>Pink</option>
+                <option>Brown</option>
+                <option>White</option>
+                <option>Black</option>
+                <option>Blue</option>
+            </select>
+            <label style="display:inline;">Sprinkle Colour:</label>
+            <select id="creationSprinkleColour">
+                <option>Pink</option>
+                <option>Brown</option>
+                <option>White</option>
+                <option>Black</option>
+                <option>Blue</option>
+            </select>
+            <input id="creationName" type="text" placeholder="Name"></input>
+            <input type="number" placeholder="Number of sprinkles" id="creationSprinkleNumber"><br>
+            <button id="makeCookie-btn">Create</button>
+        </div>
+    </div>
+</body>
+</html>
